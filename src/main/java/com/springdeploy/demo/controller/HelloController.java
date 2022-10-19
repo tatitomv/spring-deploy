@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${app.username}")
-    String username;
+    //@Value("${app.username}")
+    //String username;
 
     @GetMapping("/hola")
     public String hola(){
-        return "Hola " + username +" Como estas?";
+        return "Hola Como estas?";
     }
 }
